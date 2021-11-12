@@ -24,6 +24,8 @@ intellij {
     version = '2018.1'
     sandboxDirectory = "${project.rootDir}/.sandbox"
     updateSinceUntilBuild = false
+    // 本地IDE调试: 如果网络因素，导致下载IDE慢，可以设置下列参数
+    // localPath = "/Applications/IntelliJIDEA.app"
 }
 patchPluginXml {
     changeNotes = """Initial commit"""
