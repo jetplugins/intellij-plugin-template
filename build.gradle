@@ -1,12 +1,12 @@
 plugins {
-    id 'org.jetbrains.intellij' version '0.7.3'
+    id 'org.jetbrains.intellij' version '1.7.0'
     id 'java'
 }
 
 group 'com.github.jetplugins'
-version '0.1'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+version '0.0.1'
+sourceCompatibility = 11
+targetCompatibility = 11
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
@@ -22,7 +22,7 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version = '2018.1'
-    sandboxDirectory = "${project.rootDir}/.sandbox"
+    sandboxDir = "${project.rootDir}/.sandbox"
     updateSinceUntilBuild = false
     // 本地IDE调试: 如果网络因素，导致下载IDE慢，可以设置下列参数
     // localPath = "/Applications/IntelliJIDEA.app"
