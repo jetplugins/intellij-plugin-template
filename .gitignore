@@ -17,3 +17,6 @@ gradle-app.setting
 
 ### Intellij plugin
 .sandbox
+
+# Mac
+.DS_Store
